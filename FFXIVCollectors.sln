@@ -5,9 +5,31 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1B542C66-DD5C-42F5-8CE0-D303F6DF4EB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVCollectors.Application", "FFXIVCollectors.Application\FFXIVCollectors.Application.csproj", "{2BB0AAC9-A874-4303-BC8D-AAD1A7121560}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVCollections.Infrastructure", "FFXIVCollections.Infrastructure\FFXIVCollections.Infrastructure.csproj", "{62933AF2-91F5-46E4-9F7F-177786005B90}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BB0AAC9-A874-4303-BC8D-AAD1A7121560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB0AAC9-A874-4303-BC8D-AAD1A7121560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB0AAC9-A874-4303-BC8D-AAD1A7121560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB0AAC9-A874-4303-BC8D-AAD1A7121560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62933AF2-91F5-46E4-9F7F-177786005B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62933AF2-91F5-46E4-9F7F-177786005B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62933AF2-91F5-46E4-9F7F-177786005B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62933AF2-91F5-46E4-9F7F-177786005B90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2BB0AAC9-A874-4303-BC8D-AAD1A7121560} = {1B542C66-DD5C-42F5-8CE0-D303F6DF4EB7}
+		{62933AF2-91F5-46E4-9F7F-177786005B90} = {1B542C66-DD5C-42F5-8CE0-D303F6DF4EB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D4BAAC9-3BFB-4C14-9143-40E296422F23}
