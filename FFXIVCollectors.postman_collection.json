@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "bf337534-5349-4ee3-bb62-02d9f01b4bf7",
+		"name": "FFXIVCollectors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "Todo",
+					"item": [
+						{
+							"name": "TodoCreate",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "[\r\n    {\r\n        \"Id\":1,\r\n        \"Type\": 1\r\n    },\r\n     {\r\n        \"Id\":1,\r\n        \"Type\": 2\r\n    },\r\n     {\r\n        \"Id\":38,\r\n        \"Type\": 1\r\n    }\r\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{URL}}Profiles/1/Todo",
+									"host": [
+										"{{URL}}Profiles"
+									],
+									"path": [
+										"1",
+										"Todo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GetAllProfiles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}Profiles",
+							"host": [
+								"{{URL}}Profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateProfile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Vygandas\",\r\n    \"MountIds\": [\r\n        0,\r\n        1,\r\n        2\r\n    ],\r\n    \"MinionIds\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}Profiles",
+							"host": [
+								"{{URL}}Profiles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProfile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}Profiles/1",
+							"host": [
+								"{{URL}}Profiles"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Collectables",
+			"item": [
+				{
+					"name": "GetAllCollectables",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{URL}}/Collectables",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"Collectables"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
