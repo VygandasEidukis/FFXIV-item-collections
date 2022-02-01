@@ -1,6 +1,6 @@
 ﻿namespace FFXIVCollections.Infrastructure.Models.Dtos
 {
-    internal class MountDto
+    internal class MinionDto
     {
         public int Id { get; set; }
         public string? Name { get; set; }
